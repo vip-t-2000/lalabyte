@@ -7,5 +7,57 @@
 /* ======================================================================
  p_top
 ====================================================================== */
-.p_top {
+.front {
+  .l_contents {
+    margin: 0 0 120px;
+    @include mq_max_768(){
+      margin: 0 0 40px;
+    }
+    .link {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .txt_box {
+      position: absolute;
+      font-size: 4rem;
+      line-height: 2;
+      @include mq_max_768(){
+        position: unset;
+        font-size: 2rem;
+        text-align: center;
+      }      
+    }
+    &.service {
+      .txt_box {
+        top: 30%;
+        right: 1%;
+        color: #fff;
+        @include mq_max_768(){
+          color: #333;
+        }
+      }
+    }
+    &.plan {
+      .txt_box {
+        top: 30%;
+        left: 13%;
+        color: #333;
+      }
+    }
+  }
+  .contents_child {
+    @include flexbox();
+    @include justify_content(space-between);
+    @include flex_wrap(wrap);
+    .l_contents {
+      &.child {
+        width: 45%;
+        @include mq_max_768(){
+          width: 48%;
+        }
+      }
+    }
+  }
 }

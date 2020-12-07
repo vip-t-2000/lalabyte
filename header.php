@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>タイトル</title>
+  <title><?php bloginfo( 'name' ); ?></title>
   <?php
     get_template_part( 'assets/include/viewport' );
     get_template_part( 'assets/include/icon' );
@@ -10,3 +10,5 @@
   ?>
   <?php wp_head(); ?>
 </head>
+<body>
+<?php get_template_part( 'assets/include/l_header' ); ?>

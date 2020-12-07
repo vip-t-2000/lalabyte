@@ -1,0 +1,73 @@
+/* ======================================================================
+ setting
+====================================================================== */
+/* ======================================================================
+ p_top
+====================================================================== */
+.front .l_contents {
+  margin: 0 0 120px;
+}
+@media screen and (max-width: 768px) {
+  .front .l_contents {
+    margin: 0 0 40px;
+  }
+}
+.front .l_contents .link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.front .l_contents .txt_box {
+  position: absolute;
+  font-size: 4rem;
+  line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .front .l_contents .txt_box {
+    position: unset;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.front .l_contents.service .txt_box {
+  top: 30%;
+  right: 1%;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .front .l_contents.service .txt_box {
+    color: #333;
+  }
+}
+.front .l_contents.plan .txt_box {
+  top: 30%;
+  left: 13%;
+  color: #333;
+}
+.front .contents_child {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.front .contents_child .l_contents.child {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .front .contents_child .l_contents.child {
+    width: 48%;
+  }
+}
+
+/*# sourceMappingURL=top.css.map */

@@ -2,6 +2,81 @@
  utility
 ====================================================================== */
 
+.u_head_1 {
+  font-size: 4.4rem;
+  margin: 220px 0 370px;
+  letter-spacing: 12px;
+  line-height: 1.5;
+  text-align: center;
+  .c_1 {
+    color: #ff6768;
+  }
+  @include mq_max_768(){
+    font-size: 2.1rem;
+    margin: 40px 0 70px;
+    letter-spacing: 5px;
+    line-height: 1.22;
+    text-align: center;
+  }
+}
+
+
+.hover-1{
+  position: relative;
+  background: #fff;
+  border: 0 solid #fff;
+  box-sizing: border-box;
+  &::before{
+    content: attr(data);
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: border-width 300ms;
+    border: 0 solid #17223b;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  &:hover{
+    &::after{
+      border-width: 5px;
+    }
+  }
+}
+.txt_hover_2{
+  position: relative;
+  background: #fff;
+  &::before{
+    content: attr(data);
+    display: block;
+  }
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 5px;
+    background-color: #333;
+    transition: width 300ms;
+    width: 0;
+  }
+  &:hover{
+    &::after{
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
 /* =================================
  layout
 ================================= */
