@@ -85,153 +85,28 @@ add_action( 'manage_pages_custom_column', 'add_page_column', 10, 2);
 ====================================================================== */
 
 // news
-// add_action('init', 'news');
-// function news(){
-//   $args = array(
-//     'label' => '新着情報',
-//     'public' => true,
-//     'publicly_queryable' => true,
-//     'show_ui' => true,
-//     'query_var' => true,
-//     'rewrite' => true,
-//     'has_archive' => true,
-//     'capability_type' => 'post',
-//     'hierarchical' => true,
-//     'menu_position' => 5,
-//     'supports' => array('title','editor','thumbnail','revisions'),
-//     'rewrite' => array(
-//       'slug' => 'news',
-//       'with_front' => false
-//     ),
-//     'menu_icon' => 'dashicons-format-aside',
-//   );
-//   register_post_type('news',$args);
-
-//   //分類を追加
-//   $args = array(
-//     'label' => 'カテゴリー',
-//     'public' => true,
-//     'show_ui' => true,
-//     'hierarchical' => true,
-//     'query_var'=> true,
-//     'rewrite' => array(
-//       'slug' => 'news/category',
-//       'with_front' => false
-//     )
-//   );
-//   register_taxonomy('news_cat','news',$args);
-// }
-
-// // custom1
-// add_action('init', 'custom1');
-// function custom1(){
-//   $args = array(
-//     'label' => 'カスタム1',
-//     'public' => true,
-//     'publicly_queryable' => true,
-//     'show_ui' => true,
-//     'query_var' => true,
-//     'rewrite' => true,
-//     'has_archive' => true,
-//     'capability_type' => 'post',
-//     'hierarchical' => true,
-//     'menu_position' => 5,
-//     'supports' => array('title','editor','thumbnail','revisions'),
-//     'rewrite' => array(
-//       'slug' => 'custom1',
-//       'with_front' => false
-//     ),
-//     'menu_icon' => 'dashicons-format-aside',
-//   );
-//   register_post_type('custom1',$args);
-
-//   //分類を追加
-//   $args = array(
-//     'label' => 'カテゴリー',
-//     'public' => true,
-//     'show_ui' => true,
-//     'hierarchical' => true,
-//     'query_var'=> true,
-//     'rewrite' => array(
-//       'slug' => 'custom1/category',
-//       'with_front' => false
-//     )
-//   );
-//   register_taxonomy('custom1_cat','custom1',$args);
-// }
-
-// // hoge
-// add_action('init', 'hoge');
-// function hoge(){
-//   $args = array(
-//     'label' => 'hoge',
-//     'public' => true,
-//     'publicly_queryable' => true,
-//     'show_ui' => true,
-//     'query_var' => true,
-//     'rewrite' => true,
-//     'has_archive' => true,
-//     'capability_type' => 'post',
-//     'hierarchical' => true,
-//     'menu_position' => 5,
-//     'supports' => array('title','editor','thumbnail','revisions'),
-//     'rewrite' => array(
-//       'slug' => 'hoge',
-//       'with_front' => false
-//     ),
-//     'menu_icon' => 'dashicons-format-aside',
-//   );
-//   register_post_type('hoge',$args);
-//
-//   //分類を追加
-//   $args = array(
-//     'label' => 'カテゴリー',
-//     'public' => true,
-//     'show_ui' => true,
-//     'hierarchical' => true,
-//     'query_var'=> true,
-//     'rewrite' => array(
-//       'slug' => 'hoge/category',
-//       'with_front' => false
-//     )
-//   );
-//   register_taxonomy('hoge_cat','hoge',$args);
-// }
-
-/* ======================================================================
- プロジェクトレベル
-====================================================================== */
-
-// // Convert Slug
-// function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
-//   $posttime = get_post_time('Ymd');
-//   $today = date('Ymd');
-//   if($today <= $posttime){
-//     if($post_type == '[スラッグ]') {
-//       $slug = 'post-' . $post_ID;
-//     }else if($post_type == '[スラッグ]') {
-//       $slug = 'post-' . $post_ID;
-//     }
-//   }
-//   return $slug;
-// }
-// add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4 );
-
-// // テンプレート読み込みフィルターをカスタマイズ
-// add_filter('template_include','custom_search_template');
-// function custom_search_template($template){
-//   // 検索結果の時
-//   if ( is_search() ) {
-//     // 表示する投稿タイプを取得
-//     $post_types = get_query_var('post_type');
-//     // search-{$post_type}.php の読み込みルールを追加
-//     foreach ( (array) $post_types as $post_type )
-//     $templates[] = "search-{$post_type}.php";
-//     $templates[] = 'search.php';
-//     $template = get_query_template('search',$templates);
-//   }
-//   return $template;
-// }
+add_action('init', 'service');
+function service(){
+  $args = array(
+    'label' => 'サービス',
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'query_var' => true,
+    'rewrite' => true,
+    'has_archive' => true,
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => 5,
+    'supports' => array('title','editor','thumbnail','revisions'),
+    'rewrite' => array(
+      'slug' => 'service',
+      'with_front' => false
+    ),
+    'menu_icon' => 'dashicons-format-aside',
+  );
+  register_post_type('service',$args);
+}
 
 /* ======================================================================
  plugin関連

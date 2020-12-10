@@ -11,4 +11,4 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<?php get_template_part( 'assets/include/l_header' ); ?>
+<?php wp_is_mobile() ? get_template_part( 'assets/include/l_header_sp' ) : get_template_part( 'assets/include/l_header' ); ?>

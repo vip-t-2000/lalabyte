@@ -25,7 +25,7 @@ get_header(); ?>
     </a>
   </section>
 
-  <section class="l_contents plan">
+  <!-- <section class="l_contents plan">
     <a href="/service" class="link">
       <picture>
         <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
@@ -36,12 +36,12 @@ get_header(); ?>
         <h2>あなたに合った<span class="c_1">価格</span>で提供します。</h2>
       </div>
     </a>
-  </section>
+  </section> -->
 
   <div class="contents_child">
 
     <section class="l_contents child my">
-      <a href="/service" class="link">
+      <a href="/author" class="link">
         <picture>
           <source srcset="<?php tempath() ?>/assets/img/top/webp/img06.webp" type="image/webp">
           <img src="<?php tempath() ?>/assets/img/top/img06.jpg">
@@ -53,18 +53,18 @@ get_header(); ?>
     </section>
 
     <section class="l_contents child column">
-      <a href="/service" class="link">
+      <a href="/site" class="link">
         <picture>
           <source srcset="<?php tempath() ?>/assets/img/top/webp/img08.webp" type="image/webp">
           <img src="<?php tempath() ?>/assets/img/top/img08.jpg">
         </picture>
         <div class="txt_box">        
-          <h2>コラム</h2>
+          <h2>当サイトについて</h2>
         </div>
       </a>
     </section>
 
-    <section class="l_contents child news">
+    <!-- <section class="l_contents child news">
       <a href="/service" class="link">
         <picture>
           <source srcset="<?php tempath() ?>/assets/img/top/webp/img04.webp" type="image/webp">
@@ -86,7 +86,7 @@ get_header(); ?>
           <h2>よくある質問</h2>
         </div>
       </a>
-    </section>
+    </section> -->
 
   </div>
 

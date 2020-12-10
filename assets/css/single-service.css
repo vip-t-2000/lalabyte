@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* ======================================================================
+ setting
+====================================================================== */
+/* ======================================================================
+ single-service
+====================================================================== */
+.s_service .l_wrapper .l_container .inner img {
+  width: 1000px;
+  height: 200px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .s_service .l_wrapper .l_container .inner img {
+    width: 100%;
+  }
+}
+.s_service .l_wrapper .l_container .inner .l_box .desc {
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin: 10px 10px 40px;
+}
+.s_service .l_wrapper .l_container .inner .l_box .lists {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.s_service .l_wrapper .l_container .inner .l_box .lists .item {
+  font-size: 2.1rem;
+  margin: 20px;
+}
+.s_service .l_wrapper .l_container .inner .l_box .lists .item::before {
+  content: "";
+  /* 空の要素作成 */
+  width: 10px;
+  /* 幅指定 */
+  height: 10px;
+  /* 高さ指定 */
+  display: inline-block;
+  /* インラインブロックにする */
+  background-color: #F44336;
+  /* 背景色指定 */
+  border-radius: 50%;
+  /* 要素を丸くする */
+  position: relative;
+  /* 位置調整 */
+  top: -1px;
+  /* 位置調整 */
+  margin-right: 5px;
+  /* 余白指定 */
+}
+.s_service .l_wrapper .l_container .inner .card_box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+@media screen and (max-width: 768px) {
+  .s_service .l_wrapper .l_container .inner .card_box {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.s_service .l_wrapper .l_container .inner .card_box .card {
+  width: 288px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .s_service .l_wrapper .l_container .inner .card_box .card {
+    width: 100%;
+  }
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__imgframe {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__imgframe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__textbox {
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__textbox > * + * {
+  margin-top: 10px;
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__textbox .card__titletext {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+.s_service .l_wrapper .l_container .inner .card_box .card .card__textbox .card__overviewtext {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+table.table01 {
+  width: 100%;
+  border-right: #094 solid 1px;
+  border-collapse: collapse;
+  font-size: 2.1rem;
+}
+
+table.table01 thead th {
+  background: #094;
+  color: #FFF;
+  padding: 10px 15px;
+  border-right: #FFF solid 1px;
+  border-bottom: #FFF solid 1px;
+}
+
+table.table01 thead th:last-child {
+  border-right: #3EB1C6 solid 1px;
+}
+
+table.table01 tbody th {
+  background: #094;
+  color: #FFF;
+  padding: 10px 15px;
+  border-bottom: #FFF solid 1px;
+  vertical-align: top;
+}
+
+table.table01 tbody tr:last-child th {
+  border-bottom: #094 solid 1px;
+}
+
+table.table01 tbody td {
+  background: #FFF;
+  padding: 10px 15px;
+  border-left: #094 solid 1px;
+  border-bottom: #094 solid 1px;
+  vertical-align: top;
+}
+
+table.table01 tbody td.txt {
+  width: 630px;
+}
+
+@media screen and (max-width: 640px) {
+  table.table01 thead {
+    display: none;
+  }
+
+  table.table01 tbody th {
+    display: block;
+  }
+
+  table.table01 tbody td {
+    display: block;
+  }
+
+  table.table01 tbody td.txt {
+    width: 100%;
+  }
+
+  table.table01 tbody td::before {
+    content: attr(label);
+    float: left;
+    clear: both;
+    font-weight: bold;
+  }
+
+  table.table01 tbody td p {
+    padding-left: 6em;
+  }
+}
+
+/*# sourceMappingURL=single-service.css.map */
