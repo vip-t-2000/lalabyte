@@ -2,7 +2,10 @@
   <div class="l_backbox">
     <div class="logo">
       <a href="/" class="top_link">
-        S<span class="logo_c_1">O</span>NIC
+        <picture>
+          <source srcset="<?php tempath() ?>/assets/img/image.webp" type="image/webp">
+          <img src="<?php tempath() ?>/assets/img/logo.png">
+        </picture>
       </a>
     </div>
     <nav class="l_nav">

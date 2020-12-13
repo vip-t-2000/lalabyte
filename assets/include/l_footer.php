@@ -42,5 +42,5 @@
     </div>
 
   </div> -->
-  <div class="footer_2">&copy;SONIC</div>
+  <div class="footer_2">&copy;lalabyte</div>
 </footer>

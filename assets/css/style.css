@@ -333,7 +333,7 @@ img {
   height: 100%;
   width: 100%;
   transition: border-width 300ms;
-  border: 0 solid #17223b;
+  border: 0 solid #080957;
   box-sizing: border-box;
   z-index: 0;
 }
@@ -506,13 +506,13 @@ img {
  component
 ====================================================================== */
 .logo .top_link {
-  width: 270px;
-  height: 100%;
+  width: 190px;
+  height: 76px;
   font-size: 4.5rem;
   font-weight: bold;
   letter-spacing: 12px;
-  background: #17223b;
   color: #eee;
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -531,10 +531,14 @@ img {
 @media screen and (max-width: 768px) {
   .logo .top_link {
     width: 100%;
+    background: #080957;
   }
 }
-.logo .top_link .logo_c_1 {
-  color: #ff6768;
+@media screen and (max-width: 768px) {
+  .logo .top_link picture source, .logo .top_link picture img {
+    width: 47%;
+    border-radius: 0;
+  }
 }
 
 /* =================================
@@ -554,9 +558,9 @@ img {
   margin: 0 0 20px;
   padding: 1rem 2rem;
   color: #fff;
-  background: #263859;
-  -webkit-box-shadow: 5px 5px 0 #17223b;
-  box-shadow: 5px 5px 0 #17223b;
+  background: #080957;
+  -webkit-box-shadow: 5px 5px 0 #080957;
+  box-shadow: 5px 5px 0 #080957;
 }
 .c_head_1.consultation {
   background: #f9ac3b;
@@ -624,7 +628,7 @@ img {
 .c_vis_box {
   width: 100%;
   height: 200px;
-  background: #17223b;
+  background: #080957;
 }
 .c_vis_box.consultation {
   background: #f9ac3b;
@@ -664,32 +668,32 @@ img {
   height: 100%;
 }
 
-.wpcf7 {
+.mw_wp_form {
   background: #eee;
   padding: 20px;
   border-radius: 7px;
   font-size: 2.4rem;
   font-weight: bold;
 }
-.wpcf7 .con_ttl {
+.mw_wp_form .con_ttl {
   position: relative;
   padding: 1rem 2rem;
-  border-bottom: 6px solid #263859;
+  border-bottom: 6px solid #080957;
   width: 100%;
   display: block;
   font-size: 2.4rem;
   text-align: center;
 }
-.wpcf7 .con_ttl:after {
+.mw_wp_form .con_ttl:after {
   position: absolute;
   bottom: -6px;
   left: 0;
   width: 20%;
   height: 6px;
   content: '';
-  background: #17223b;
+  background: #080957;
 }
-.wpcf7 input {
+.mw_wp_form input {
   background: #fff;
   width: 100%;
   height: 50px;
@@ -700,7 +704,7 @@ img {
   padding: 0 0 0px 20px;
   color: #333;
 }
-.wpcf7 select {
+.mw_wp_form select {
   background: #fff;
   width: 100%;
   height: 50px;
@@ -712,10 +716,10 @@ img {
   color: #333;
   position: relative;
 }
-.wpcf7 select:after {
+.mw_wp_form select:after {
   content: "▼";
 }
-.wpcf7 textarea {
+.mw_wp_form textarea {
   width: 100%;
   background: #fff;
   border-radius: 7px;
@@ -725,7 +729,7 @@ img {
   padding: 0 0 0px 20px;
   color: #333;
 }
-.wpcf7 input[type="submit"] {
+.mw_wp_form input[type="submit"] {
   font-size: 2.1rem;
   background: #ff6768;
   color: #fff;
@@ -939,7 +943,7 @@ img {
   padding: 26px;
   width: 22%;
   font-weight: normal;
-  background-color: #17223b;
+  background-color: #080957;
   color: #fff;
   font-weight: bold;
 }
@@ -981,7 +985,7 @@ img {
   .el_humburger {
     display: block;
     right: 0;
-    top: 0;
+    top: 10px;
     padding-top: 10px;
     width: 70px;
     height: 70px;
@@ -1113,7 +1117,7 @@ img {
   position: fixed;
   right: 0;
   height: 100%;
-  background-color: #17223b;
+  background-color: #080957;
   width: 0;
   z-index: 3;
   padding-top: 100px;
@@ -1212,7 +1216,7 @@ img {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  width: 60%;
+  width: 90%;
   height: 65px;
   margin: 0 auto;
 }
@@ -1259,7 +1263,7 @@ img {
 .l_nav .lists .item {
   height: 100%;
   font-size: 1.8rem;
-  color: #17223b;
+  color: #080957;
   margin: 0 20px 0 0;
   font-weight: bold;
 }
@@ -1300,7 +1304,7 @@ img {
  l_main
 ================================= */
 .l_main {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -1322,7 +1326,7 @@ img {
  l_side
 ================================= */
 .l_side {
-  width: 400px;
+  width: 25%;
 }
 @media screen and (max-width: 768px) {
   .l_side {
@@ -1404,7 +1408,7 @@ img {
 ================================= */
 .l_footer {
   width: 100%;
-  background: #263859;
+  background: #080957;
   margin: 30px 0 0;
 }
 .l_footer .footer_1 {
@@ -1469,7 +1473,7 @@ img {
 .l_footer .footer_2 {
   text-align: center;
   height: 40px;
-  background: #17223b;
+  background: #080957;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1486,7 +1490,7 @@ img {
  l_container
 ================================= */
 .l_container {
-  width: 1000px;
+  width: 70%;
 }
 @media screen and (max-width: 768px) {
   .l_container {
@@ -1507,7 +1511,7 @@ img {
  l_header_top
 ================================= */
 .l_archive .l_container {
-  width: 1000px;
+  width: 70%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {

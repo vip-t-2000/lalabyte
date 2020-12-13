@@ -25,7 +25,7 @@
   <div class="profile-card">
     <div class="profile-card__inner">
       <div class="profile-thumb">
-        <img src="http://vip2000.wp.xdomain.jp/wp-content/uploads/2020/12/13162817295579-scaled.jpg" alt="アイコン">
+        <img src="http://lalabyte.jp/wp-content/uploads/2020/12/13162817295579-scaled.jpg" alt="アイコン">
       </div>
       <div class="profile-content">
         <span class="profile-name">ぐぁ</span>

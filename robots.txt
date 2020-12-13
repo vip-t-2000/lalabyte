@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:
+Sitemap: https://lalabyte.jp/sitemap.xml

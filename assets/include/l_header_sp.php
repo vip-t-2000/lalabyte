@@ -4,11 +4,14 @@ src="https://code.jquery.com/jquery-2.2.4.min.js"
 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 crossorigin="anonymous"></script>
 
-  <div class="logo">
+    <div class="logo">
       <a href="/" class="top_link">
-        S<span class="logo_c_1">O</span>NIC
+        <picture>
+          <source srcset="<?php tempath() ?>/assets/img/image.webp" type="image/webp">
+          <img src="<?php tempath() ?>/assets/img/logo.png">
+        </picture>
       </a>
-  </div>
+    </div>
   <div class="el_humburger"><!--ハンバーガーボタン-->
     <div class="el_humburger_wrapper">
       <span class="el_humburger_bar top"></span>

@@ -108,6 +108,43 @@ function service(){
   register_post_type('service',$args);
 }
 
+// column
+add_action('init', 'column');
+function column(){
+  $args = array(
+    'label' => 'コラム',
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'query_var' => true,
+    'rewrite' => true,
+    'has_archive' => true,
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => 5,
+    'supports' => array('title','editor','thumbnail','revisions'),
+    'rewrite' => array(
+      'slug' => 'column',
+      'with_front' => false
+    ),
+    'menu_icon' => 'dashicons-format-aside',
+  );
+  register_post_type('column',$args);
+  //分類を追加
+  $args = array(
+    'label' => 'カテゴリー',
+    'public' => true,
+    'show_ui' => true,
+    'hierarchical' => true,
+    'query_var'=> true,
+    'rewrite' => array(
+      'slug' => 'column/category',
+      'with_front' => false
+    )
+  );
+  register_taxonomy('column_cat','column',$args);
+}
+
 /* ======================================================================
  plugin関連
 ====================================================================== */

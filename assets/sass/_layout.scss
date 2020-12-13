@@ -42,7 +42,7 @@
   .l_backbox{
     @include flexbox();
     @include justify_content(space-between);    
-    width: 60%;
+    width: 90%;
     height: 65px;
     margin: 0 auto;
     @include mq_max_768(){
@@ -70,7 +70,7 @@
     .item {
       height: 100%;
       font-size: 1.8rem;
-      color: #17223b;
+      color: #080957;
       margin: 0 20px 0 0;
       font-weight: bold;
       .link {
@@ -116,7 +116,7 @@
  l_main
 ================================= */
 .l_main {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   @include mq_max_768(){
     width: 98%;
@@ -136,7 +136,7 @@
  l_side
 ================================= */
 .l_side {
-  width: 400px;
+  width: 25%;
   @include mq_max_768(){
     width: 100%;
     margin: 20px 0 0;
@@ -221,7 +221,7 @@
 ================================= */
 .l_footer {
   width: 100%;
-  background: #263859;
+  background: #080957;
   margin: 30px 0 0;
   .footer_1 {
     display: none;
@@ -273,7 +273,7 @@
   .footer_2 {
     text-align: center;
     height: 40px;
-    background: #17223b;
+    background: #080957;
     color: #fff;
     display: flex;
     align-items: center;
@@ -295,7 +295,7 @@
  l_container
 ================================= */
 .l_container {
-  width: 1000px;
+  width: 70%;
   @include mq_max_768(){
     width: 100%;
   }
@@ -313,7 +313,7 @@
 ================================= */
 .l_archive {  
   .l_container {
-    width: 1000px;
+    width: 70%;
     height: 100%;
     @include mq_max_768(){
       width: 100%;

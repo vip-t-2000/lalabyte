@@ -6,7 +6,7 @@ get_header(); ?>
 
 <main class="l_main front">
   <h1 class="u_head_1">
-    全体の運用に関する<span class="c_1">お悩み</span><br>
+    サイトの運用に関する<span class="c_1">お悩み</span><br>
     プログラミングに関する<span class="c_1">お悩み</span><br>
     あらゆる課題や悩みを解決<br>
     気軽にご相談ください。
