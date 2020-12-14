@@ -12,7 +12,7 @@
   </script>
   <meta charset="UTF-8">
   <link rel="icon" type="image/x-icon" href="<?php tempath() ?>/assets/img/favicon.jpg">
-  <title><?php is_front_page() ? bloginfo( 'name' ) : get_the_title() + bloginfo( 'name' ) ; ?></title>
+  <title><?= is_front_page() ? bloginfo( 'name' ) : get_the_title() ." | ". get_bloginfo( 'name' ) ; ?></title>
   <?php
     get_template_part( 'assets/include/viewport' );
     get_template_part( 'assets/include/icon' );

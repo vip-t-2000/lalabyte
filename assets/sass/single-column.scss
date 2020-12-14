@@ -1,0 +1,32 @@
+@import 'compass';
+@import 'compass/support';
+
+@import 'setting';
+@import 'mixin';
+
+/* ======================================================================
+ single-service
+====================================================================== */
+.s_column {
+  .l_wrapper {
+    .l_container {
+      .inner {
+        .thumb_box {
+          img {
+            width: 100%;
+          }
+        }
+        .l_box {
+          h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0 0 20px;
+            padding: 20px;
+            border-bottom: solid 1px #ddd;
+          }
+        }
+      }
+    }
+  }
+}

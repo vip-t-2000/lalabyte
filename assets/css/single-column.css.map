@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;AAcU,uDAAI;EACF,KAAK,EAAE,IAAI;;AAIb,kDAAG;EACD,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,QAAQ;EAChB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,cAAc",
+"sources": ["../sass/single-column.scss"],
+"names": [],
+"file": "single-column.css"
+}

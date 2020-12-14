@@ -20,8 +20,8 @@
       <?php endwhile; endif; ?>
     </ul>
     <?php wp_reset_postdata(); ?>
-  </div>
-  <!-- <p class="c_side_head">PROFILE</p>
+  <!-- </div>
+  <p class="c_side_head">PROFILE</p>
   <div class="profile-card">
     <div class="profile-card__inner">
       <div class="profile-thumb">
