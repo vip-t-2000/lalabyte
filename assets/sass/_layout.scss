@@ -34,20 +34,30 @@
  l_header
 ================================= */
 .l_header {
-  border-bottom: solid 1px #ddd;
-  height: auto;
-  @include mq_max_768(){
-   border: none;
-  }
-  .l_backbox{
-    @include flexbox();
-    @include justify_content(space-between);    
-    width: 90%;
-    height: 65px;
-    margin: 0 auto;
-    @include mq_max_768(){
-      @include flex_direction(column);
+  width: 100%;
+  height: 180px;
+  .top_header {
+    width: 100%;
+    height: 20px;
+    background: #4164B4;
+    color: #fff;
+    .txt {
+      @include flexbox();
+      @include justify_content(left);
+      @include align_items(center);
       width: 100%;
+      height: 100%;
+      padding: 0 0 0 20px;
+    }
+  }
+  .main_header {
+    height: 160px;
+    .logo {
+      text-align: center;
+      font-size: 4.4rem;
+      margin: 40px 0;
+      color: #4164B4;
+      letter-spacing: 2.4px;
     }
   }
 }
@@ -56,28 +66,22 @@
  l_nav
 ================================= */
 .l_nav {
-  width: 60%;
-  height: 100%;
-    @include mq_max_768(){
-      display: none;
-    }
+  width: 100%;
   .lists {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    margin: 0 auto;
     @include flexbox();
-    @include justify_content(right);
-    @include align_items(center);
+    @include justify_content(space-around);
     .item {
-      height: 100%;
       font-size: 1.8rem;
-      color: #080957;
-      margin: 0 20px 0 0;
-      font-weight: bold;
       .link {
-        padding: 10px;
-        @include flexbox();
-        @include justify_content(center);
-        @include align_items(center);
+        color: #666;
+        font-weight: bold;
+        transform: scale(1);
+        transition: .3s;
+        &:hover {
+          transform: scale(1.25);
+        }
       }
     }
   }

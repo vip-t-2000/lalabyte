@@ -1,22 +1,17 @@
 <header class="l_header">
-  <div class="l_backbox">
+  <div class="top_header"><span class="txt">サイト運営・相談ならLalabyte</span></div>
+  <div class="main_header">
     <div class="logo">
-      <a href="/" class="top_link">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/image.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/logo.png">
-        </picture>
-      </a>
+      <strong>Lalabyte</strong>
     </div>
     <nav class="l_nav">
       <ul class="lists">
-        <li class="item"><a href="/service" class="link txt_hover_2">サービス</a></li>
-        <li class="item"><a href="/site" class="link txt_hover_2">当サイトについて</a></li>
-        <li class="item"><a href="/author" class="link txt_hover_2">自己紹介</a></li>
-        <!-- <li class="item"><a href="/column" class="link txt_hover_2">コラム</a></li> -->
-        <!-- <li class="item"><a href="/faq" class="link txt_hover_2">よくあるご質問</a></li> -->
-        <li class="item"><a href="/contact" class="link txt_hover_2">お問い合わせ</a></li>
+        <li class="item"><a href="" class="link">SERVICE</a></li>
+        <li class="item"><a href="" class="link">ABOUT</a></li>
+        <li class="item"><a href="" class="link">PROFILE</a></li>
+        <li class="item"><a href="" class="link">CONTACT</a></li>
       </ul>
     </nav>
   </div>
 </header>
+

@@ -8,56 +8,123 @@
  p_top
 ====================================================================== */
 .front {
-  .l_contents {
-    margin: 0 0 120px;
-    @include mq_max_768(){
-      margin: 0 0 40px;
-    }
-    .link {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .txt_box {
-      position: absolute;
-      font-size: 4rem;
-      line-height: 2;
-      @include mq_max_768(){
-        position: unset;
-        font-size: 2rem;
-        text-align: center;
-      }      
-    }
-    &.service {
-      .txt_box {
-        top: 30%;
-        right: 1%;
-        color: #fff;
-        @include mq_max_768(){
-          color: #333;
+  .kv {
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
+    .autoplay-slider {
+      background: #4164B4;
+      display: flex;
+      min-width: 100%;
+      width: min-content;
+      animation: 20s linear infinite sliderAnimation;
+      .slide {
+        height: 340px;
+        width: 400px;
+        margin: 20px;
+        position: relative;
+        picture {
+          position: absolute;
+          font-size: 3em;
+          color: #fff;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          source,img {
+            width: 100%;
+            height: 300px;
+            border-radius: 7px;
+            object-fit: cover;
+          }
         }
-      }
-    }
-    &.plan {
-      .txt_box {
-        top: 30%;
-        left: 13%;
-        color: #333;
       }
     }
   }
-  .contents_child {
-    @include flexbox();
-    @include justify_content(space-between);
-    @include flex_wrap(wrap);
-    .l_contents {
-      &.child {
-        width: 45%;
-        @include mq_max_768(){
-          width: 48%;
+  .l_contents {
+   &.service {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    .l_box {
+      width: 49%;
+      border: solid 1px #4164B4;
+      padding: 20px;
+      font-size: 1.8rem;
+      margin: 10px 0;
+      .u_head_2 {
+        text-align: center;
+        border-bottom: solid 1px #4164B4;
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+      }
+      .btn_box {
+        margin: 20px 0px 10px;
+        .btn {
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 1.5;
+          position: relative;
+          display: inline-block;
+          padding: 1rem 4rem;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          text-align: center;
+          vertical-align: middle;
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          color: #212529;
+          border-radius: 0.5rem;
+          color: #fff;
+          background-color: #41B4A0;
+          border-bottom: 5px solid #41B4A0;
+          -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+          &:hover {
+            margin-top: 3px;
+            color: #fff;
+            background: #409184;
+            border-bottom: 2px solid #409184;
+          }
         }
       }
     }
+   }
+  }
+  .contact_btn_box {
+    .contact_btn {
+     text-align: center;
+     background: #4164B4;
+     width: 530px;
+     margin: 0 auto;
+     font-size: 2rem;
+     color: #fff;
+     border-radius: 30px;
+     padding: 15px 0;
+     position: relative;
+     &:after {
+       content: ">";
+       position: absolute;
+       top: 25%;
+       right: 17px;
+       font-size: 2.2rem;
+       font-weight: bold;
+     }
+     &:hover {
+       background: #495a82;
+     }
+    }
+  }
+}
+@keyframes sliderAnimation {
+  100% {
+    transform: translateX(-50%);
   }
 }
