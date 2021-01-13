@@ -7,45 +7,42 @@ get_header(); ?>
 <main class="l_main front">
   <!-- スライダー -->
   <div class="kv">
-    <div class="autoplay-slider">
-      <div class="slide">
+    <div class="sliderArea">
+      <div class="full-screen slider">
+        <div>
+          <picture>
+            <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
+            <img src="<?php tempath() ?>/assets/img/top/img10.png">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
+            <img src="<?php tempath() ?>/assets/img/top/img10.png">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
+            <img src="<?php tempath() ?>/assets/img/top/img10.png">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
+            <img src="<?php tempath() ?>/assets/img/top/img10.png">
+          </picture>
+        </div>
+        <div>
         <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
-      </div>
-      <div class="slide">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img04.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
-      </div>
-      <div class="slide">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img05.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
-      </div>
-      <div class="slide">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img06.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
-      </div>
-      <div class="slide">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img07.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
-      </div>
-      <div class="slide">
-        <picture>
-          <source srcset="<?php tempath() ?>/assets/img/top/webp/img08.webp" type="image/webp">
-          <img src="<?php tempath() ?>/assets/img/top/img10.png">
-        </picture>
+            <source srcset="<?php tempath() ?>/assets/img/top/webp/img03.webp" type="image/webp">
+            <img src="<?php tempath() ?>/assets/img/top/img10.png">
+          </picture>
+        </div>
       </div>
     </div>
   </div>
+    
 
   <h1 class="u_head_1">
     サイトの運用に関する<span class="c_1">お悩み</span><br>
