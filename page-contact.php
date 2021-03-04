@@ -7,7 +7,7 @@
 
   <main class="l_main s_service">
     <div class="c_vis_box <?= $slug ?>">
-      <h1 class="page_ttl">簡単お問い合わせフォーム</h1>
+      <h1 class="page_ttl">簡単問い合わせフォーム</h1>
     </div>
     <?php get_template_part( 'assets/include/bread' ); ?>
     <p class="read_txt">

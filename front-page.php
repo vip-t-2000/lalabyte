@@ -2,7 +2,7 @@
 /**
 Template Name: トップページ
  */
-get_header(); ?>
+get_header();?>
 
 <main class="l_main front">
   <!-- スライダー -->
